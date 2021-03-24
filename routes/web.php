@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-// アクセス時のルーティング
+// アクセス時のルーティング!省略しない
 Route::get('sample/vali', 'App\Http\Controllers\ValiController@index');
-// フォーム送信時のルーティング
+// フォーム送信時のルーティング!
 Route::post('sample/vali', 'App\Http\Controllers\ValiController@receiveData');
